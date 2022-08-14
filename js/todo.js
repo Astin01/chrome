@@ -9,6 +9,9 @@ function deleteToDo(event){
     const li = event.target.parentElement;
     // 대문자,소문자 주의
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    // li.id는 string(id는 문자열로 자동 형변환) ,filter에서 배열의 각 요소들을 하니씩 인자로 보냄
+    saveToDo();
 }
 
 function saveToDo(){
