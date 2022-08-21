@@ -1,11 +1,56 @@
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
 * {
-    margin:0;
-    padding:0;
-
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
 
+form input {
+  color: black;
+}
+
+button {
+  color: black;
+}
+
+h1 {
+  font-size: 60px;
+  padding: 18px 0px;
+}
+
+#clock {
+  padding: 18px 0px;
+  font-size: 23px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+#weather {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 23px;
+}
+
+#quote {
+  position: absolute;
+  bottom: 130px;
+  font-size: 23px;
+}
