@@ -1,6 +1,6 @@
-const images = ["1.jpg","2.jpg","3.jpg","4.jpg"];
+const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
 
-const chosenImage= images[Math.floor(Math.random()*images.length)];
+const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 // const bgImage = document.createElement("img");
 
@@ -10,3 +10,5 @@ const chosenImage= images[Math.floor(Math.random()*images.length)];
 
 document.body.style.backgroundImage = `url('img/${chosenImage}')`;
 // js에서 생성한 변수는 js 내에서 해결
+
+// 이미지 변수, 랜덤함수 이용해서 이미지 선택
