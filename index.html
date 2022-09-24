@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav_style.css" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">미세먼지 농도</a>
+      <a href="#">날씨</a>
+      <a href="#">코로나 확진자</a>
+    </div>
+
+    <span id="nav_bar" onclick="openNav()">Content</span>
+
     <form class="hidden" id="login-form">
-        <input
+      <input
         required
         maxlength="15"
-        type="text" 
+        type="text"
         placeholder="What is your name?"
-        />
-        <input type="submit" value="Log In"/>
+      />
+      <input type="submit" value="Log In" />
     </form>
-    <h1 id = "greeting" class="hidden"></h1>
+    <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
-        <input type="text" placeholder="Write a to-do and Press Enter" required />
+      <input type="text" placeholder="Write a to-do and Press Enter" required />
     </form>
     <ul id="todo-list"></ul>
     <h2 id="clock">00:00:00</h2>
     <div id="quote">
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
     </div>
     <div id="weather">
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
     </div>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
@@ -37,7 +49,8 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
-</body>
+    <script src="js/nav.js"></script>
+  </body>
 </html>
 
 <!-- 데이터 타입, 문자string"",숫자,boolean참,거짓,null비어있음,값있음,
@@ -45,4 +58,8 @@
     array.push()아이템을 받아서 배열끝에 추가, property들을 그룹으로 묶기 위해 object사용
     function 코드를 캡슐화해서 반복사용 만든것
      const상수,let변수선언(업데이트 가능),var사용x
-    argu인자,함수에 보내는 값,밖에서는 매개변수에 접근x  -->
+    argu인자,함수에 보내는 값,밖에서는 매개변수에 접근x     
+    return 값 반환, return뒤 문장은 실행x(함수종료때문)
+    조건문if,else/if,elseif, ||or &&and
+
+-->
